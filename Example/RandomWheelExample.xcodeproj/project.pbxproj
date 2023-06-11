@@ -28,6 +28,53 @@
 		1B9B6ACF2A35B10F007B060E /* AudioPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6ACE2A35B10F007B060E /* AudioPlayable.swift */; };
 		1B9B6AD12A35B142007B060E /* ImpactFeedbackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AD02A35B142007B060E /* ImpactFeedbackable.swift */; };
 		1B9B6AD32A35B163007B060E /* AudioPersistencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AD22A35B163007B060E /* AudioPersistencing.swift */; };
+		1B9B6AD62A35B55B007B060E /* SliceDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AD52A35B55B007B060E /* SliceDrawing.swift */; };
+		1B9B6AD82A35B58F007B060E /* TextDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AD72A35B58F007B060E /* TextDrawing.swift */; };
+		1B9B6ADA2A35B5C3007B060E /* CurveTextDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AD92A35B5C3007B060E /* CurveTextDrawing.swift */; };
+		1B9B6ADC2A35B5E5007B060E /* ShapeDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6ADB2A35B5E5007B060E /* ShapeDrawing.swift */; };
+		1B9B6ADE2A35B5F9007B060E /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6ADD2A35B5F9007B060E /* ImageDrawing.swift */; };
+		1B9B6AE22A35B639007B060E /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AE12A35B639007B060E /* CollisionDetector.swift */; };
+		1B9B6AE42A35B656007B060E /* CollisionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AE32A35B656007B060E /* CollisionCalculator.swift */; };
+		1B9B6AE62A35B66D007B060E /* ContinuousCollisionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AE52A35B66D007B060E /* ContinuousCollisionCalculator.swift */; };
+		1B9B6AE82A35B680007B060E /* CollisionDetectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AE72A35B680007B060E /* CollisionDetectable.swift */; };
+		1B9B6AEA2A35B693007B060E /* PinImageViewCollisionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AE92A35B693007B060E /* PinImageViewCollisionAnimator.swift */; };
+		1B9B6AEC2A35B6D2007B060E /* SpinningAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AEB2A35B6D2007B060E /* SpinningAnimatable.swift */; };
+		1B9B6AEE2A35B6E6007B060E /* SpinningWheelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AED2A35B6E6007B060E /* SpinningWheelAnimator.swift */; };
+		1B9B6AF12A35B719007B060E /* SliceCalculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AF02A35B719007B060E /* SliceCalculating.swift */; };
+		1B9B6AF32A35B735007B060E /* WheelMathCalculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AF22A35B735007B060E /* WheelMathCalculating.swift */; };
+		1B9B6AF52A35B74B007B060E /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AF42A35B74B007B060E /* Calc.swift */; };
+		1B9B6AF82A35B78D007B060E /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AF72A35B78D007B060E /* SynchronizedDictionary.swift */; };
+		1B9B6AFA2A35B7BB007B060E /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AF92A35B7BB007B060E /* SynchronizedArray.swift */; };
+		1B9B6AFC2A35B7FD007B060E /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AFB2A35B7FD007B060E /* Slice.swift */; };
+		1B9B6AFE2A35B811007B060E /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AFD2A35B811007B060E /* AudioFile.swift */; };
+		1B9B6B002A35B827007B060E /* AudioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6AFF2A35B827007B060E /* AudioError.swift */; };
+		1B9B6B022A35B83C007B060E /* CollisionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B012A35B83C007B060E /* CollisionType.swift */; };
+		1B9B6B042A35B84E007B060E /* CollisionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B032A35B84E007B060E /* CollisionEffect.swift */; };
+		1B9B6B062A35B85F007B060E /* SFGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B052A35B85F007B060E /* SFGradientColor.swift */; };
+		1B9B6B0A2A35B8A4007B060E /* CAAnimationGroup+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B092A35B8A4007B060E /* CAAnimationGroup+Builder.swift */; };
+		1B9B6B0C2A35B8B9007B060E /* CAAnimation+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B0B2A35B8B9007B060E /* CAAnimation+Duration.swift */; };
+		1B9B6B0E2A35B8E9007B060E /* CALayer+UpdateValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B0D2A35B8E9007B060E /* CALayer+UpdateValues.swift */; };
+		1B9B6B112A35B911007B060E /* String+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B102A35B911007B060E /* String+Crop.swift */; };
+		1B9B6B132A35B924007B060E /* String+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B122A35B924007B060E /* String+Split.swift */; };
+		1B9B6B152A35B943007B060E /* String+Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B142A35B943007B060E /* String+Dots.swift */; };
+		1B9B6B172A35B958007B060E /* String+Width.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B162A35B958007B060E /* String+Width.swift */; };
+		1B9B6B192A35B96B007B060E /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B182A35B96B007B060E /* String+Lines.swift */; };
+		1B9B6B1B2A35B99F007B060E /* UIFont+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B1A2A35B99F007B060E /* UIFont+Size.swift */; };
+		1B9B6B1D2A35B9BA007B060E /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B1C2A35B9BA007B060E /* Color+Random.swift */; };
+		1B9B6B1F2A35B9D1007B060E /* UIImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B1E2A35B9D1007B060E /* UIImage+TintColor.swift */; };
+		1B9B6B212A35B9E4007B060E /* CGRest+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B202A35B9E4007B060E /* CGRest+AspectFit.swift */; };
+		1B9B6B232A35B9F9007B060E /* Array+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B222A35B9F9007B060E /* Array+Default.swift */; };
+		1B9B6B252A35BA0E007B060E /* NSView+AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B242A35BA0E007B060E /* NSView+AnchorPoint.swift */; };
+		1B9B6B272A35BA41007B060E /* CGRect+AspectFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B262A35BA41007B060E /* CGRect+AspectFill.swift */; };
+		1B9B6B292A35BA55007B060E /* CGFloat+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B282A35BA55007B060E /* CGFloat+Math.swift */; };
+		1B9B6B2B2A35BA6A007B060E /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B2A2A35BA6A007B060E /* CGPoint+Math.swift */; };
+		1B9B6B2D2A35BAA1007B060E /* SwiftFortuneWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B2C2A35BAA1007B060E /* SwiftFortuneWheel.swift */; };
+		1B9B6B2F2A35BAC7007B060E /* macOSPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B2E2A35BAC7007B060E /* macOSPort.swift */; };
+		1B9B6B322A35BB12007B060E /* PinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B312A35BB12007B060E /* PinImageView.swift */; };
+		1B9B6B342A35BB38007B060E /* SpinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B332A35BB38007B060E /* SpinButton.swift */; };
+		1B9B6B362A35BB5E007B060E /* WheelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B352A35BB5E007B060E /* WheelLayer.swift */; };
+		1B9B6B382A35BB71007B060E /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B372A35BB71007B060E /* WheelView.swift */; };
+		1B9B6B3A2A35BB95007B060E /* NoClippingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B6B392A35BB95007B060E /* NoClippingLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +102,53 @@
 		1B9B6ACE2A35B10F007B060E /* AudioPlayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayable.swift; sourceTree = "<group>"; };
 		1B9B6AD02A35B142007B060E /* ImpactFeedbackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactFeedbackable.swift; sourceTree = "<group>"; };
 		1B9B6AD22A35B163007B060E /* AudioPersistencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPersistencing.swift; sourceTree = "<group>"; };
+		1B9B6AD52A35B55B007B060E /* SliceDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceDrawing.swift; sourceTree = "<group>"; };
+		1B9B6AD72A35B58F007B060E /* TextDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDrawing.swift; sourceTree = "<group>"; };
+		1B9B6AD92A35B5C3007B060E /* CurveTextDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveTextDrawing.swift; sourceTree = "<group>"; };
+		1B9B6ADB2A35B5E5007B060E /* ShapeDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDrawing.swift; sourceTree = "<group>"; };
+		1B9B6ADD2A35B5F9007B060E /* ImageDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrawing.swift; sourceTree = "<group>"; };
+		1B9B6AE12A35B639007B060E /* CollisionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDetector.swift; sourceTree = "<group>"; };
+		1B9B6AE32A35B656007B060E /* CollisionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCalculator.swift; sourceTree = "<group>"; };
+		1B9B6AE52A35B66D007B060E /* ContinuousCollisionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousCollisionCalculator.swift; sourceTree = "<group>"; };
+		1B9B6AE72A35B680007B060E /* CollisionDetectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDetectable.swift; sourceTree = "<group>"; };
+		1B9B6AE92A35B693007B060E /* PinImageViewCollisionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImageViewCollisionAnimator.swift; sourceTree = "<group>"; };
+		1B9B6AEB2A35B6D2007B060E /* SpinningAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningAnimatable.swift; sourceTree = "<group>"; };
+		1B9B6AED2A35B6E6007B060E /* SpinningWheelAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningWheelAnimator.swift; sourceTree = "<group>"; };
+		1B9B6AF02A35B719007B060E /* SliceCalculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceCalculating.swift; sourceTree = "<group>"; };
+		1B9B6AF22A35B735007B060E /* WheelMathCalculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelMathCalculating.swift; sourceTree = "<group>"; };
+		1B9B6AF42A35B74B007B060E /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		1B9B6AF72A35B78D007B060E /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
+		1B9B6AF92A35B7BB007B060E /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		1B9B6AFB2A35B7FD007B060E /* Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
+		1B9B6AFD2A35B811007B060E /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		1B9B6AFF2A35B827007B060E /* AudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioError.swift; sourceTree = "<group>"; };
+		1B9B6B012A35B83C007B060E /* CollisionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionType.swift; sourceTree = "<group>"; };
+		1B9B6B032A35B84E007B060E /* CollisionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionEffect.swift; sourceTree = "<group>"; };
+		1B9B6B052A35B85F007B060E /* SFGradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGradientColor.swift; sourceTree = "<group>"; };
+		1B9B6B092A35B8A4007B060E /* CAAnimationGroup+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimationGroup+Builder.swift"; sourceTree = "<group>"; };
+		1B9B6B0B2A35B8B9007B060E /* CAAnimation+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Duration.swift"; sourceTree = "<group>"; };
+		1B9B6B0D2A35B8E9007B060E /* CALayer+UpdateValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UpdateValues.swift"; sourceTree = "<group>"; };
+		1B9B6B102A35B911007B060E /* String+Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crop.swift"; sourceTree = "<group>"; };
+		1B9B6B122A35B924007B060E /* String+Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Split.swift"; sourceTree = "<group>"; };
+		1B9B6B142A35B943007B060E /* String+Dots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dots.swift"; sourceTree = "<group>"; };
+		1B9B6B162A35B958007B060E /* String+Width.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Width.swift"; sourceTree = "<group>"; };
+		1B9B6B182A35B96B007B060E /* String+Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Lines.swift"; sourceTree = "<group>"; };
+		1B9B6B1A2A35B99F007B060E /* UIFont+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Size.swift"; sourceTree = "<group>"; };
+		1B9B6B1C2A35B9BA007B060E /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
+		1B9B6B1E2A35B9D1007B060E /* UIImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TintColor.swift"; sourceTree = "<group>"; };
+		1B9B6B202A35B9E4007B060E /* CGRest+AspectFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRest+AspectFit.swift"; sourceTree = "<group>"; };
+		1B9B6B222A35B9F9007B060E /* Array+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Default.swift"; sourceTree = "<group>"; };
+		1B9B6B242A35BA0E007B060E /* NSView+AnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+AnchorPoint.swift"; sourceTree = "<group>"; };
+		1B9B6B262A35BA41007B060E /* CGRect+AspectFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectFill.swift"; sourceTree = "<group>"; };
+		1B9B6B282A35BA55007B060E /* CGFloat+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Math.swift"; sourceTree = "<group>"; };
+		1B9B6B2A2A35BA6A007B060E /* CGPoint+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
+		1B9B6B2C2A35BAA1007B060E /* SwiftFortuneWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFortuneWheel.swift; sourceTree = "<group>"; };
+		1B9B6B2E2A35BAC7007B060E /* macOSPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSPort.swift; sourceTree = "<group>"; };
+		1B9B6B312A35BB12007B060E /* PinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImageView.swift; sourceTree = "<group>"; };
+		1B9B6B332A35BB38007B060E /* SpinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinButton.swift; sourceTree = "<group>"; };
+		1B9B6B352A35BB5E007B060E /* WheelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelLayer.swift; sourceTree = "<group>"; };
+		1B9B6B372A35BB71007B060E /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		1B9B6B392A35BB95007B060E /* NoClippingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClippingLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +182,7 @@
 		1B9B6A8A2A35A69D007B060E /* RandomWheelExample */ = {
 			isa = PBXGroup;
 			children = (
-				1B9B6ABE2A35AFC2007B060E /* Liba */,
+				1B9B6ABE2A35AFC2007B060E /* Framework */,
 				1B9B6AA32A35A80F007B060E /* Modules */,
 				1B9B6AA22A35A7FF007B060E /* Navigation */,
 				1B9B6AA12A35A7F6007B060E /* System */,
@@ -194,13 +288,18 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		1B9B6ABE2A35AFC2007B060E /* Liba */ = {
+		1B9B6ABE2A35AFC2007B060E /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				1B9B6B302A35BB06007B060E /* Views */,
+				1B9B6B072A35B876007B060E /* Extensions */,
+				1B9B6AF62A35B780007B060E /* Models */,
 				1B9B6AC82A35B076007B060E /* Utils */,
 				1B9B6ABF2A35AFD4007B060E /* Configuration */,
+				1B9B6B2C2A35BAA1007B060E /* SwiftFortuneWheel.swift */,
+				1B9B6B2E2A35BAC7007B060E /* macOSPort.swift */,
 			);
-			path = Liba;
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		1B9B6ABF2A35AFD4007B060E /* Configuration */ = {
@@ -217,6 +316,9 @@
 		1B9B6AC82A35B076007B060E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B9B6AEF2A35B70E007B060E /* Calculating */,
+				1B9B6ADF2A35B626007B060E /* Animation */,
+				1B9B6AD42A35B550007B060E /* Drawing */,
 				1B9B6AC92A35B080007B060E /* Audio */,
 			);
 			path = Utils;
@@ -232,6 +334,117 @@
 				1B9B6AD22A35B163007B060E /* AudioPersistencing.swift */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		1B9B6AD42A35B550007B060E /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6AD52A35B55B007B060E /* SliceDrawing.swift */,
+				1B9B6AD72A35B58F007B060E /* TextDrawing.swift */,
+				1B9B6AD92A35B5C3007B060E /* CurveTextDrawing.swift */,
+				1B9B6ADB2A35B5E5007B060E /* ShapeDrawing.swift */,
+				1B9B6ADD2A35B5F9007B060E /* ImageDrawing.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		1B9B6ADF2A35B626007B060E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6AE02A35B62F007B060E /* Collision */,
+				1B9B6AEB2A35B6D2007B060E /* SpinningAnimatable.swift */,
+				1B9B6AED2A35B6E6007B060E /* SpinningWheelAnimator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1B9B6AE02A35B62F007B060E /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6AE12A35B639007B060E /* CollisionDetector.swift */,
+				1B9B6AE32A35B656007B060E /* CollisionCalculator.swift */,
+				1B9B6AE52A35B66D007B060E /* ContinuousCollisionCalculator.swift */,
+				1B9B6AE72A35B680007B060E /* CollisionDetectable.swift */,
+				1B9B6AE92A35B693007B060E /* PinImageViewCollisionAnimator.swift */,
+			);
+			path = Collision;
+			sourceTree = "<group>";
+		};
+		1B9B6AEF2A35B70E007B060E /* Calculating */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6AF02A35B719007B060E /* SliceCalculating.swift */,
+				1B9B6AF22A35B735007B060E /* WheelMathCalculating.swift */,
+				1B9B6AF42A35B74B007B060E /* Calc.swift */,
+			);
+			path = Calculating;
+			sourceTree = "<group>";
+		};
+		1B9B6AF62A35B780007B060E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6AF72A35B78D007B060E /* SynchronizedDictionary.swift */,
+				1B9B6AF92A35B7BB007B060E /* SynchronizedArray.swift */,
+				1B9B6AFB2A35B7FD007B060E /* Slice.swift */,
+				1B9B6AFD2A35B811007B060E /* AudioFile.swift */,
+				1B9B6AFF2A35B827007B060E /* AudioError.swift */,
+				1B9B6B012A35B83C007B060E /* CollisionType.swift */,
+				1B9B6B032A35B84E007B060E /* CollisionEffect.swift */,
+				1B9B6B052A35B85F007B060E /* SFGradientColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B9B6B072A35B876007B060E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6B0F2A35B906007B060E /* String */,
+				1B9B6B082A35B89A007B060E /* CoreAnimation */,
+				1B9B6B1A2A35B99F007B060E /* UIFont+Size.swift */,
+				1B9B6B1C2A35B9BA007B060E /* Color+Random.swift */,
+				1B9B6B1E2A35B9D1007B060E /* UIImage+TintColor.swift */,
+				1B9B6B202A35B9E4007B060E /* CGRest+AspectFit.swift */,
+				1B9B6B222A35B9F9007B060E /* Array+Default.swift */,
+				1B9B6B242A35BA0E007B060E /* NSView+AnchorPoint.swift */,
+				1B9B6B262A35BA41007B060E /* CGRect+AspectFill.swift */,
+				1B9B6B282A35BA55007B060E /* CGFloat+Math.swift */,
+				1B9B6B2A2A35BA6A007B060E /* CGPoint+Math.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B9B6B082A35B89A007B060E /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6B092A35B8A4007B060E /* CAAnimationGroup+Builder.swift */,
+				1B9B6B0B2A35B8B9007B060E /* CAAnimation+Duration.swift */,
+				1B9B6B0D2A35B8E9007B060E /* CALayer+UpdateValues.swift */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		1B9B6B0F2A35B906007B060E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6B102A35B911007B060E /* String+Crop.swift */,
+				1B9B6B122A35B924007B060E /* String+Split.swift */,
+				1B9B6B142A35B943007B060E /* String+Dots.swift */,
+				1B9B6B162A35B958007B060E /* String+Width.swift */,
+				1B9B6B182A35B96B007B060E /* String+Lines.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		1B9B6B302A35BB06007B060E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B9B6B312A35BB12007B060E /* PinImageView.swift */,
+				1B9B6B332A35BB38007B060E /* SpinButton.swift */,
+				1B9B6B352A35BB5E007B060E /* WheelLayer.swift */,
+				1B9B6B372A35BB71007B060E /* WheelView.swift */,
+				1B9B6B392A35BB95007B060E /* NoClippingLayer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,25 +540,72 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9B6B342A35BB38007B060E /* SpinButton.swift in Sources */,
 				1B9B6AA52A35A8FE007B060E /* Coordinator.swift in Sources */,
+				1B9B6AFA2A35B7BB007B060E /* SynchronizedArray.swift in Sources */,
+				1B9B6B172A35B958007B060E /* String+Width.swift in Sources */,
+				1B9B6B0C2A35B8B9007B060E /* CAAnimation+Duration.swift in Sources */,
 				1B9B6AB12A35A9D4007B060E /* MainScreenFactory.swift in Sources */,
+				1B9B6B232A35B9F9007B060E /* Array+Default.swift in Sources */,
 				1B9B6ACF2A35B10F007B060E /* AudioPlayable.swift in Sources */,
+				1B9B6AFE2A35B811007B060E /* AudioFile.swift in Sources */,
+				1B9B6B1B2A35B99F007B060E /* UIFont+Size.swift in Sources */,
+				1B9B6AFC2A35B7FD007B060E /* Slice.swift in Sources */,
+				1B9B6B132A35B924007B060E /* String+Split.swift in Sources */,
+				1B9B6B152A35B943007B060E /* String+Dots.swift in Sources */,
 				1B9B6ACB2A35B092007B060E /* AudioPlayer.swift in Sources */,
+				1B9B6B3A2A35BB95007B060E /* NoClippingLayer.swift in Sources */,
+				1B9B6AEA2A35B693007B060E /* PinImageViewCollisionAnimator.swift in Sources */,
+				1B9B6AEE2A35B6E6007B060E /* SpinningWheelAnimator.swift in Sources */,
 				1B9B6AA72A35A910007B060E /* RootCoordinator.swift in Sources */,
+				1B9B6B2B2A35BA6A007B060E /* CGPoint+Math.swift in Sources */,
+				1B9B6B192A35B96B007B060E /* String+Lines.swift in Sources */,
 				1B9B6AAA2A35A96B007B060E /* MainScreenCoordinator.swift in Sources */,
+				1B9B6B042A35B84E007B060E /* CollisionEffect.swift in Sources */,
+				1B9B6AF12A35B719007B060E /* SliceCalculating.swift in Sources */,
+				1B9B6AEC2A35B6D2007B060E /* SpinningAnimatable.swift in Sources */,
+				1B9B6AF32A35B735007B060E /* WheelMathCalculating.swift in Sources */,
 				1B9B6AD12A35B142007B060E /* ImpactFeedbackable.swift in Sources */,
+				1B9B6B062A35B85F007B060E /* SFGradientColor.swift in Sources */,
 				1B9B6AB42A35A9D4007B060E /* MainScreenInteractor.swift in Sources */,
 				1B9B6AB22A35A9D4007B060E /* MainScreenViewController.swift in Sources */,
+				1B9B6ADC2A35B5E5007B060E /* ShapeDrawing.swift in Sources */,
+				1B9B6B362A35BB5E007B060E /* WheelLayer.swift in Sources */,
+				1B9B6AF82A35B78D007B060E /* SynchronizedDictionary.swift in Sources */,
+				1B9B6B1F2A35B9D1007B060E /* UIImage+TintColor.swift in Sources */,
+				1B9B6B0A2A35B8A4007B060E /* CAAnimationGroup+Builder.swift in Sources */,
 				1B9B6AC52A35B026007B060E /* SFWConfiguration.swift in Sources */,
+				1B9B6AF52A35B74B007B060E /* Calc.swift in Sources */,
+				1B9B6B212A35B9E4007B060E /* CGRest+AspectFit.swift in Sources */,
 				1B9B6AD32A35B163007B060E /* AudioPersistencing.swift in Sources */,
+				1B9B6ADE2A35B5F9007B060E /* ImageDrawing.swift in Sources */,
+				1B9B6AE62A35B66D007B060E /* ContinuousCollisionCalculator.swift in Sources */,
 				1B9B6AC32A35AFFF007B060E /* ImagePreferences.swift in Sources */,
+				1B9B6B272A35BA41007B060E /* CGRect+AspectFill.swift in Sources */,
+				1B9B6B292A35BA55007B060E /* CGFloat+Math.swift in Sources */,
+				1B9B6B0E2A35B8E9007B060E /* CALayer+UpdateValues.swift in Sources */,
 				1B9B6AB52A35A9D4007B060E /* MainScreenView.swift in Sources */,
+				1B9B6B1D2A35B9BA007B060E /* Color+Random.swift in Sources */,
+				1B9B6B2D2A35BAA1007B060E /* SwiftFortuneWheel.swift in Sources */,
+				1B9B6B322A35BB12007B060E /* PinImageView.swift in Sources */,
+				1B9B6AE22A35B639007B060E /* CollisionDetector.swift in Sources */,
+				1B9B6B112A35B911007B060E /* String+Crop.swift in Sources */,
+				1B9B6AD62A35B55B007B060E /* SliceDrawing.swift in Sources */,
 				1B9B6A8C2A35A69D007B060E /* AppDelegate.swift in Sources */,
 				1B9B6A8E2A35A69D007B060E /* SceneDelegate.swift in Sources */,
 				1B9B6AC12A35AFE1007B060E /* TextPreferences.swift in Sources */,
+				1B9B6ADA2A35B5C3007B060E /* CurveTextDrawing.swift in Sources */,
+				1B9B6AD82A35B58F007B060E /* TextDrawing.swift in Sources */,
+				1B9B6AE42A35B656007B060E /* CollisionCalculator.swift in Sources */,
 				1B9B6ACD2A35B0C7007B060E /* AudioPlayerManager.swift in Sources */,
+				1B9B6AE82A35B680007B060E /* CollisionDetectable.swift in Sources */,
+				1B9B6B022A35B83C007B060E /* CollisionType.swift in Sources */,
+				1B9B6B002A35B827007B060E /* AudioError.swift in Sources */,
+				1B9B6B2F2A35BAC7007B060E /* macOSPort.swift in Sources */,
 				1B9B6AC72A35B053007B060E /* LinePreferences.swift in Sources */,
+				1B9B6B382A35BB71007B060E /* WheelView.swift in Sources */,
 				1B9B6AB32A35A9D4007B060E /* MainScreenAssembly.swift in Sources */,
+				1B9B6B252A35BA0E007B060E /* NSView+AnchorPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
