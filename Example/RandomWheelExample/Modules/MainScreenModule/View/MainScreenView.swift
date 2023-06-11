@@ -40,6 +40,7 @@ final class MainScreenView: MainScreenViewProtocol {
       slices: slices,
       configuration: configuration
     )
+    
     configureLayout()
     applyDefaultBehavior(slices: slices)
   }
