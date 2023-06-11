@@ -14,10 +14,10 @@ let package = Package(
       targets: ["RandomWheel"]),
   ],
   targets: [
-    .target(
-      name: "RandomWheel"),
+    .target(name: "RandomWheel"),
     .testTarget(
       name: "RandomWheelTests",
-      dependencies: ["RandomWheel"]),
+      dependencies: ["RandomWheel"]
+    )
   ]
 )

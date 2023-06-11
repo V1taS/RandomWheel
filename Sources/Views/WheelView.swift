@@ -109,7 +109,6 @@ final class WheelView: UIView {
 #endif
     wheelLayer!.setNeedsDisplay()
   }
-  
 }
 
 extension WheelView {

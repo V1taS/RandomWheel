@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RandomWheel
 
 /// События которые отправляем из `текущего модуля` в `другой модуль`
 protocol MainScreenModuleOutput: AnyObject {}
@@ -61,6 +62,11 @@ final class MainScreenViewController: MainScreenModule {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    let preferences = factory.getVariousWheelSimpleText()
+    let texts = ["$30", "$10", "$250", "$20", "LOSE", "$5", "$500", "$80", "LOSE", "$200"]
+    let slices = factory.getSlices(texts: texts, preferences: preferences)
+    let configuration = factory.getVariousWheelSimpleConfiguration()
+    moduleView.updateContent(slices: slices, configuration: configuration)
   }
 }
 

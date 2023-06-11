@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import RandomWheel
 
 /// События которые отправляем из View в Presenter
 protocol MainScreenViewOutput: AnyObject {}
 
 /// События которые отправляем от Presenter ко View
-protocol MainScreenViewInput {}
+protocol MainScreenViewInput {
+  
+  /// Обновить контент
+  func updateContent(slices: [Slice], configuration: SFWConfiguration?)
+}
 
 /// Псевдоним протокола UIView & MainScreenViewInput
 typealias MainScreenViewProtocol = UIView & MainScreenViewInput
@@ -25,34 +30,71 @@ final class MainScreenView: MainScreenViewProtocol {
   
   // MARK: - Private properties
   
-  // MARK: - Initialization
-  
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    
-    configureLayout()
-    applyDefaultBehavior()
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+  private var fortuneWheel: SwiftFortuneWheel?
   
   // MARK: - Internal func
+  
+  func updateContent(slices: [Slice], configuration: SFWConfiguration?) {
+    fortuneWheel = SwiftFortuneWheel(
+      frame: Appearance().frame,
+      slices: slices,
+      configuration: configuration
+    )
+    configureLayout()
+    applyDefaultBehavior(slices: slices)
+  }
 }
 
 // MARK: - Private
 
 private extension MainScreenView {
-  func configureLayout() {}
+  func configureLayout() {
+    guard let fortuneWheel else {
+      return
+    }
+    
+    subviews.forEach {
+      $0.removeFromSuperview()
+    }
+    
+    [fortuneWheel].forEach {
+      $0.translatesAutoresizingMaskIntoConstraints = false
+      addSubview($0)
+    }
+    
+    NSLayoutConstraint.activate([
+      fortuneWheel.widthAnchor.constraint(equalToConstant: Appearance().frame.width),
+      fortuneWheel.heightAnchor.constraint(equalToConstant: Appearance().frame.height),
+      
+      fortuneWheel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+      fortuneWheel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+    ])
+  }
   
-  func applyDefaultBehavior() {
-    backgroundColor = .red
+  func applyDefaultBehavior(slices: [Slice]) {
+    backgroundColor = .gray
+    
+    var finishIndex = Int.random(in: 0..<slices.count)
+    
+    fortuneWheel?.pinImage = "whitePinArrow"
+    fortuneWheel?.pinImageViewCollisionEffect = CollisionEffect(force: 8, angle: 20)
+    fortuneWheel?.edgeCollisionDetectionOn = true
+    
+    fortuneWheel?.onSpinButtonTap = { [weak self] in
+      self?.fortuneWheel?.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
+        print(finished)
+      }
+    }
   }
 }
 
 // MARK: - Appearance
 
 private extension MainScreenView {
-  struct Appearance {}
+  struct Appearance {
+    let frame = CGRect(x: .zero,
+                       y: .zero,
+                       width: UIScreen.main.bounds.width - 32,
+                       height: UIScreen.main.bounds.width - 32)
+  }
 }
