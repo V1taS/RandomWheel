@@ -50,8 +50,19 @@ final class MainScreenFactory: MainScreenFactoryInput {
   }
   
   func getVariousWheelSimpleConfiguration() -> SFWConfiguration {
-    let colors = [#colorLiteral(red: 0.9420027733, green: 0.7658308744, blue: 0.136086911, alpha: 1), #colorLiteral(red: 0.9099512696, green: 0.4911828637, blue: 0.1421333849, alpha: 1), #colorLiteral(red: 0.8836082816, green: 0.3054297864, blue: 0.2412178218, alpha: 1), #colorLiteral(red: 0.8722914457, green: 0.1358049214, blue: 0.382327497, alpha: 1), #colorLiteral(red: 0.578535378, green: 0.6434150338, blue: 0.6437515616, alpha: 1),  #colorLiteral(red: 0.07094667107, green: 0.6180127263, blue: 0.5455638766, alpha: 1), #colorLiteral(red: 0.1627037525, green: 0.4977462888, blue: 0.7221878171, alpha: 1),  #colorLiteral(red: 0.5330474377, green: 0.2909428477, blue: 0.6148440838, alpha: 1), #colorLiteral(red: 0.5619059801, green: 0.2522692084, blue: 0.4293728471, alpha: 1), #colorLiteral(red: 0.2041620612, green: 0.3005031645, blue: 0.3878828585, alpha: 1)]
-    let pin = SFWConfiguration.PinImageViewPreferences(size: CGSize(width: 30,height: 50),
+    let colors = [
+      UIColor(hexString: "#F0C322"),
+      UIColor(hexString: "#E87C24"),
+      UIColor(hexString: "#E14D3E"),
+      UIColor(hexString: "#DF2292"),
+      UIColor(hexString: "#937BA4"),
+      UIColor(hexString: "#129E8C"),
+      UIColor(hexString: "#297FB9"),
+      UIColor(hexString: "#884B9D"),
+      UIColor(hexString: "#8F4070"),
+      UIColor(hexString: "#344D63"),
+    ]
+    let pin = SFWConfiguration.PinImageViewPreferences(size: CGSize(width: 30, height: 50),
                                                        position: .top,
                                                        verticalOffset: -30)
     let sliceColorType = SFWConfiguration.ColorType.customPatternColors(colors: colors,
@@ -81,4 +92,43 @@ final class MainScreenFactory: MainScreenFactoryInput {
 
 private extension MainScreenFactory {
   struct Appearance {}
+}
+
+// MARK: - UIColor
+
+private extension UIColor {
+  convenience init(hexString: String) {
+    var r: CGFloat = .zero
+    var g: CGFloat = .zero
+    var b: CGFloat = .zero
+    var a: CGFloat = 1
+    
+    let hexColor = hexString.replacingOccurrences(of: "#", with: "")
+    let scanner = Scanner(string: hexColor)
+    var hexNumber: UInt64 = 0
+    var valid = false
+    
+    if scanner.scanHexInt64(&hexNumber) {
+      if hexColor.count == 8 {
+        r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
+        g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
+        b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
+        a = CGFloat(hexNumber & 0x000000ff) / 255
+        valid = true
+      }
+      
+      else if hexColor.count == 6 {
+        r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
+        g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
+        b = CGFloat(hexNumber & 0x0000ff) / 255
+        valid = true
+      }
+    }
+    
+#if DEBUG
+    assert(valid, "UIColor initialized with invalid hex string")
+#endif
+    
+    self.init(red: r, green: g, blue: b, alpha: a)
+  }
 }
