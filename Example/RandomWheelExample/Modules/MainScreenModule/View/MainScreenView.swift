@@ -74,7 +74,7 @@ private extension MainScreenView {
   func applyDefaultBehavior(slices: [Slice]) {
     backgroundColor = .gray
     
-    var finishIndex = Int.random(in: 0..<slices.count)
+    let finishIndex = Int.random(in: 0..<slices.count)
     
     fortuneWheel?.pinImage = "whitePinArrow"
     fortuneWheel?.pinImageViewCollisionEffect = CollisionEffect(force: 8, angle: 20)

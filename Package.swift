@@ -11,7 +11,8 @@ let package = Package(
   products: [
     .library(
       name: "RandomWheel",
-      targets: ["RandomWheel"]),
+      targets: ["RandomWheel"]
+    ),
   ],
   targets: [
     .target(name: "RandomWheel"),
