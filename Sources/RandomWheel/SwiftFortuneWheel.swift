@@ -91,12 +91,8 @@ public final class SwiftFortuneWheel: SFWControl {
   public var slices: [Slice] = [] {
     didSet {
       self.wheelView?.slices = slices
+      self.animator.resetRotationPosition()
     }
-  }
-  
-  /// Reset rotation
-  public func resetRotationPosition() {
-    self.animator.resetRotationPosition()
   }
   
   /// Pin image name from assets catalog
